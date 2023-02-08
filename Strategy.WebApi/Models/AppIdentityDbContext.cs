@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Strategy.WebApi.Models;
 
 namespace Identity.WebApi.Models;
 
@@ -9,4 +10,5 @@ public class AppIdentityDbContext : IdentityDbContext<AppUser>
   {
     
   }
+  public DbSet<Product> Products { get; set; }
 }
